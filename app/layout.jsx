@@ -1,27 +1,23 @@
-import '@/assets/styles/globals.css';
+import "@/assets/styles/globals.css";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
-    title: 'Property Pulse',
-    keywords: 'rental, property, real estate',
-    description: 'Find the perfect rental property',
-}
+  title: "Property Pulse",
+  keywords: "rental, property, real estate",
+  description: "Find the perfect rental property",
+};
 
 const MainLayout = ({ children }) => {
-    return (
-        <html lang="en">
-            <head>
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-                    rel="stylesheet"
-                />
-            </head>
-            <body>
-                <main>
-                    {children}
-                </main>
-            </body>
-        </html>
-    );
-}
+  return (
+    <html>
+      <body>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+};
 
 export default MainLayout;
