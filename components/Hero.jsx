@@ -12,7 +12,7 @@ const Hero = () => {
             Discover the perfect property that suits your needs
           </p>
           <h2 className=" font-bold my-4 text-xl text-white">
-            Sold by Max Kutepov
+            Sold by Sasha Kutepov
           </h2>
         </div>
         <PropertySearchForm />

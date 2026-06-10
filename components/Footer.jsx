@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-sm text-gray-500 mt-2 md:mt-0">
-            &copy; {currentYear} Property Pulse. All rights reserved.
+            &copy; {currentYear} Sasha's Properties. All rights reserved.
           </p>
         </div>
       </div>
