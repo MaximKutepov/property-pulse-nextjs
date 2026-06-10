@@ -1,3 +1,4 @@
+"use client";
 import {
   FaTimes,
   FaBed,
@@ -6,7 +7,9 @@ import {
   FaCheck,
   FaMapMarker,
 } from "react-icons/fa";
-import PropertyMap from "./PropertyMap";
+import dynamic from "next/dynamic";
+
+const PropertyMap = dynamic(() => import("./PropertyMap"), { ssr: false });
 
 const PropertyDetails = ({ property }) => {
   return (
